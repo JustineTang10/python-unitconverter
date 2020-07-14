@@ -1,0 +1,7 @@
+def dinnercost ():
+    cost = int(input("What is your dinner cost?"))
+    tax = cost * 0.0825
+    tip = cost * 0.15
+    print("Your total cost (including the tax and tips) is $", round(cost + tax + tip, 2), ".")
+
+dinnercost ()
