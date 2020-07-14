@@ -1,0 +1,36 @@
+def unitconverter():
+    choice = int(input("What kind of data do you want to convert? The 3 valid choices are length (1), weight (2), and temperature (3). Please input the number next to your choice."))
+    if choice == 1:
+        lengthchoice = int(input("Are you converting from inches to centimeters (1), or centimeters to inches (2)? Please input the number below that matches your choice."))
+        if lengthchoice == 1:
+            lengthnumber = int(input("Please input the inches value you want to convert to centimeters."))
+            print(lengthnumber / 2.54)
+        elif lengthchoice == 2:
+            lengthnumber = int(input("Please input the centimeters value you want to convert to inches."))
+            print(lengthnumber * 2.54)
+        else:
+            print("Invalid option, sorry.")
+    elif choice == 2:
+        weightchoice = int(input("Are you converting from pounds to kilograms (1), or kilograms to pounds (2)? Please input the number below that matches your choice."))
+        if weightchoice == 1:
+            weightnumber = int(input("Please input the pounds value you want to convert to kilograms."))
+            print(weightnumber / 2.205)
+        elif weightchoice ==2:
+            weightnumber = int(input("Please input the kilograms value you want to convert to pounds."))
+            print(weightnumber * 2.205)
+        else:
+            print("Invalid option, sorry.")
+    elif choice == 3:
+        tempchoice = int(input("Are you converting from Fahrenheit to Celsius (1), or Celsius to Fahrenheit (2)? Please input the number below that matches your choice."))
+        if tempchoice == 1:
+            tempnumber = int(input("Please input the Fahrenheit value you want to convert to Celsius."))
+            print((tempnumber - 32) * 5 / 9)
+        elif tempchoice ==2:
+            tempnumber = int(input("Please input the Celsius value you want to convert to Fahrenheit."))
+            print(tempnumber * 9 / 5  + 32)
+        else:
+            print("Invalid option, sorry.")
+    else:
+        print("Invalid choice")
+        
+unitconverter()
